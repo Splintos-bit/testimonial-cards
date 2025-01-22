@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Website with Flexbox and Carousel</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- First Section -->
+        <section class="section-one">
+            <div class="flex-container">
+                <div class="box1-container">
+                    <div class="box1">
+                        <div class="box1-top">
+                            <div class="text">I have been solving all the
+                                project
+                                ideas on roadmap.sh and I am surprised
+                                how far I have come from where I started
+                                <p class="p1">Highly recommended!</p>
+                            </div>
+                        </div>
+                        <div class="box-1">
+                            <div class="img-triange">
+                                <div class="triangle"></div>
+                                <img class="s1_box1_img" src="./ms.jpg" alt>
+                            </div>
+                            <div>
+                                <h1>Mokhtar Soumair</h1>
+                                <p>Junior Frontend Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box2">
+                    <div class="box2-container">
+                        <div class="box2-top">
+                            <div class="text2">I have been solving all the
+                                project
+                                ideas on roadmap.sh and I am surprised
+                                how far I have come from where I started
+                                <p class="p1">Highly recommended!</p>
+                            </div>
+                        </div>
+                        <div class="box-1">
+                            <div class="img-triange">
+
+                                <img class="s1_box1_img" src="./ms.jpg" alt>
+                            </div>
+                            <div>
+                                <h1>Mokhtar Soumair</h1>
+                                <p>Junior Frontend Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Second Section -->
+        <section class="section-two">
+            <div class="flex-container2">
+
+                <img class="box3" src="/ms.jpg" alt>
+                <div class="box4">
+                    <div class="rating">
+                        <span
+                            class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+
+                    </div>
+                    <h1 class>Mokhtar Soumair</h1>
+                    <p class="box4-p">Junior Frontend Engineer</p>
+                    <div class="box4-bottom">
+                        I have been solving all the
+                        project
+                        ideas on roadmap.sh and I am surprised
+                        how far I have come from where I started
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Third Section (Carousel) -->
+        <!-- Third Section (Carousel) -->
+        <section class="section-three">
+            <div>
+                I have been solving all the
+                project
+                ideas on roadmap.sh and I am surprised
+                how far I have come from where I started
+            </div>
+            <div class="carousel-container">
+
+                <div class="carousel">
+                    <button class="prev"
+                        onclick="moveSlide(-1)">&#10094;</button>
+
+                    <div class="carousel-item">
+                        <img src="ms.jpg" alt="Image 1">
+                        <p>Image 1</p>
+                    </div>
+                    <div class="carousel-item2">
+                        <img src="ms.jpg" alt="Image 2">
+                        <p>Image 2</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="ms.jpg" alt="Image 3">
+                        <p>Image 3</p>
+                    </div>
+
+                    <button class="next"
+                        onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,275 @@
+/* Resetting margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin:2em;
+    
+}
+
+/* First and Second Sections - Flexbox Layout */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    
+}
+.flex-container2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.box {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    flex: 1;
+    margin: 10px;
+    
+}
+.box1 {
+   
+    
+    display: grid;
+    place-items: center; /* Centers both horizontally and vertically */
+    
+    
+}
+.box1-container{
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+    
+}
+.box2-container{
+    
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+    
+}
+.box2 {
+   
+    
+    padding: 0px;
+    text-align: left;
+    flex: 1;
+    margin: 0px;
+    
+}
+.box2-container{
+
+   border:black solid 2px;
+    border-radius: 15px;
+    padding: 1.5em;
+
+
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+}
+
+.img-triangle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    text-align: center;
+}
+.triangle{
+   
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 50px solid black; /* Triangle color */
+    margin-left:15px;
+    margin-top:-50px;
+    margin-bottom:5px;
+   
+}
+.box1-top{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    padding: 1.5em;
+   
+}
+.box2-top{
+    
+}
+.text{
+    width: 30ch;
+    text-align: left;
+}
+
+.text2{
+    width: 50ch;
+    font-weight: bold;
+    text-align: left;
+}
+.box-1{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+   
+    border-radius: 10px;
+    
+    width: 350px;
+}
+.p1{
+    margin-top:1.5em;
+    margin-bottom: 0.5em;
+}
+
+.s1_box1_img {
+    width: 80px; /* Width of the profile image */
+    height: 80px; /* Height of the profile image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image is not distorted */
+    margin-right: 20px; /* Adds space between the image and text */
+    object-fit: cover;
+}
+
+.box3 {
+    background-color: #4CAF50;
+  
+   
+    
+    margin: 10px;
+    width: 33.33%;
+    height: 400px;
+
+    
+    position: relative; /* Ensure positioning context */
+    border:black solid 2px;
+    border-radius: 15px;
+    
+
+
+    text-align: center;
+
+
+
+
+    
+}
+
+.box4 {
+    background-color:black;
+    color:white;
+    padding: 20px;
+    text-align: left;
+    margin: 10px;
+    width: 66.66%; /* 2/3 of the container width */
+    border-radius: 15px;
+}
+.rating {
+    font-size: 50px; /* Larger stars */
+    color: yellow;   /* Yellow color for the stars */
+  }
+  
+  .star {
+    margin: 0 0.5px;
+    border-radius: 15px;
+  }
+  .box4-p{
+    color:gray;
+    margin-top:1em;
+    margin-bottom:1em;
+  }
+  .box4-bottom{
+    
+    width: 40ch;
+  }
+/* Carousel Section */
+/* Section style */
+.section-three {
+    text-align: center;
+    padding: 50px 0;
+    border:2px solid black;
+    border-radius:15px;
+}
+
+/* Carousel container */
+.carousel-container {
+    position: relative;
+    width: 320px;  /* Width of the fully visible image */
+    overflow: hidden;  /* Hide overflowed images */
+    margin: 0 auto;
+    padding:3em;
+}
+
+/* Carousel items */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individual carousel item */
+.carousel-item {
+    width: 300px;  /* Width of each image */
+    margin: 0 2px; /* Margin between images */
+    opacity: 0.8; /* Slightly reduce opacity for hidden items */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition when images are shown/hidden */
+    text-align: center;
+    
+}
+
+.carousel-item img {
+    width: 80px; /* Width of the profile image */
+    height: 80px; /* Height of the profile image */
+    border-radius: 50%; /* Makes the image circular */
+    padding: 1em;
+}
+.carousel-item2 img {
+    width: 80px; /* Width of the profile image */
+    height: 80px; /* Height of the profile image */
+    border-radius: 50%; /* Makes the image circular */
+}
+
+/* Make sure the first image is centered and the others are hidden */
+.carousel-item.active {
+    opacity: 1;  /* Fully show the active item */
+}
+
+/* Navigation buttons (positioned around the images) */
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color:black;
+    font-size: 0.5rem;
+    border: none;
+    padding: 1px;
+    cursor: pointer;
+    z-index: 10;
+    
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+/* Optional: Make sure buttons don't cover the images */
+.carousel-container {
+    width: 320px;
+    height: 200px;
+    overflow: hidden;
+}
